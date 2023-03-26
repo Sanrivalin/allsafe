@@ -1,0 +1,517 @@
+/****************Custom Properties**************** */
+:root {
+   --first-color: rgb(246, 114, 128);
+   --first-alpha-color:rgb(246, 114, 128, 0.75);
+   --second-color:rgb(53, 92, 125);
+   --second-alpha-color:rgb(53, 92, 125, 0.75);
+   --third-color:rgb(108, 91, 123);
+   --third-alpha-color:rgb(108, 91, 123, 0.75);
+
+   --link-color:rgb(192, 108, 132);
+   --link-alpha-color:rgb(192, 108, 132, 0.75);
+
+   --bg-color:rgb(245, 245, 245);
+   --bg-alpha-color:rgb(245, 245, 245, 0.75);
+}
+
+/****************Reset Styles********************* */
+body {
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+#ancla-contacto {
+    color:var(--link-color);
+    transition: all .3s ease-out;
+    text-decoration: none;
+}
+
+#ancla-contacto:hover {
+    color:var(--bg-color);
+}
+
+
+
+
+
+/****************Bootstrap Styles***************** */
+.bg-body-tertiary {
+    background-color:var(--second-color) !important;
+}
+
+.container-fluid {
+    
+    
+      justify-content: center;	
+}
+
+.d-block {
+    width: 120px;;
+    height: 860px;
+
+}
+
+.dropdown-item {
+    color:var(--first-alpha-color);
+    font-weight: bold;
+    transition: all .3s ease-out;
+}
+
+.dropdown-item:hover {
+    color:var(--third-alpha-color);  
+    
+}
+
+.navbar-brand img {
+    width:auto;
+    height: 120px;
+}
+
+.navbar-dark .navbar-toggler {
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transition: all .3s ease-out;
+}
+
+.navbar-dark .navbar-toggler:hover {
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28246, 114, 128%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    
+}
+
+.nav-item {    
+    transition: all .3s ease-out;
+}
+    
+.nav-item:hover{
+    background-color:var(--first-alpha-color);
+}
+
+.nav-link {
+    margin-left: .8rem;
+    color: var(--first-color);
+    font-size: 1.15rem;
+    font-weight:bold;
+}
+
+.nav-link:hover {
+    color: var(--bs-white);
+}
+
+/**********************Slider****************/*
+
+.slider {
+    width:75vw;
+    height:auto;
+    margin:auto;
+    overflow:hidden;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation:scroll 40s linear infinite;    ;
+    -webkit-animation:scroll 40s linear infinite;
+    width: calc(200px * 20);
+}
+
+.slider .slide {
+    width:200px;
+}
+
+.slider .slide img {
+    width:100%;
+    height: 130px;
+}
+ @keyframes scroll {
+    0% {
+        transform:translatex(0);
+        -webkit-transform:translatex(0);
+        
+    }
+    100% {
+    transform:translatex(calc(-200px * 10));
+    -webkit-transform:translatex(calc(-200px * 10));  
+    
+    }
+ }
+
+ #img-microsoft {
+    height: 48px;
+    margin-left: 54px;
+ }
+
+ #img-hp {
+    height: 65px;
+    margin-left: 35px;
+    /* margin-right: 25px; */
+ }
+
+ #img-apple{
+    height:68px;
+    /* margin-right: 25px; */
+    margin-left: 35px;
+ }
+
+ #img-acer {
+    height: 95px;
+    margin-left: 59px;
+ }
+
+ #img-lexmark {
+    height: 155px;
+    margin-left: 54px;
+ }
+
+ #img-dell {
+    height: 110px;
+    margin-left: 49px;
+ }
+
+ #img-lenovo {
+    margin-left: 35px;
+ }
+
+ #img-canon {
+    margin-left: 35px;    
+ }
+
+ #img-asus {
+    margin-left: 25px;
+ }
+
+
+
+
+
+
+/****************My styles************************ */
+  
+ a {
+    color:rgb(137, 137, 137);   
+  }
+
+  a:hover {
+    color:var(--first-alpha-color);
+
+  } 
+
+
+
+.bg-gradient-pink-blue {
+background: rgb(192,108,132);
+background: linear-gradient(90deg, rgba(192,108,132,1) 15%, rgba(108,91,123,1) 91%);
+
+}
+.card-text {
+    display: flex; 
+    align-items: center;
+}
+
+
+
+
+  #btn-info {
+    width: 140px;
+    height: 50px;    
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--first-color);
+    background-color:var(--bg-color) ;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+
+
+  #btn-info:hover {
+    background-color: var(--bg-alpha-color);
+    box-shadow: 0px 15px 20px rgba(246, 114, 128, 0.4);
+
+  }
+
+  .btn-close {
+    background-color: rgb(237, 235, 235);
+    color: white;
+  }
+
+ 
+
+
+  #contactanos-text {
+    margin-top:92px;
+    margin-bottom:70px ;
+  }
+
+  #contacto {
+    margin-top: -50px;
+    padding-top: 50px;
+  }
+
+
+.inicio-button {
+    width: 240px;
+    height: 65px;    
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    }
+  
+.inicio-button:hover {
+    background-color: var(--first-color);
+    box-shadow: 0px 15px 20px rgba(246, 114, 128, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+    cursor: pointer;
+  }
+
+
+
+#imagen1,#imagen2, #imagen3, #imagen4 {
+    height: 347px;
+    transition: all 0.7s ease-in-out;    
+    border-radius: 20px;  
+}
+
+#img-conoceme {     
+    height: 420px;   
+}
+
+
+
+/* #imagen1:hover,#imagen2:hover, #imagen3:hover, #imagen4:hover {
+    transform:scale(1.05);
+    transition: 3s;
+   
+} */
+
+#conoceme {
+
+    background-color: var(--link-color);    
+    height: auto;
+    margin-top: -50px;
+    padding-top: 93px;
+
+}
+
+li {
+    list-style:none
+}
+
+
+
+.modal-content {
+    background: rgb(192,108,132);
+background: radial-gradient(circle, rgba(192,108,132,1) 0%, rgba(108,91,123,1) 0%);
+}
+
+
+
+.text-inicio-button {    
+    
+    margin-top: 340px; 
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    font: normal 48px/normal "Warnes", Helvetica, sans-serif;
+    color: rgba(255,255,255,1);
+    text-decoration: normal;
+    text-align: center;   
+    animation: flicker 1.5s infinite alternate;  
+}
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+        0 0 2px #fff,
+        0 0 7px #fff,
+        0 0 11px #fff,
+        0 0 19px var(--first-color),
+        0 0 30px var(--first-color),
+        0 0 60px var(--first-color),
+        0 0 70px var(--first-color),
+        0 0 100px var(--first-color);
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+
+   hr {
+    background-color: transparent;
+    border: none;
+    height: 2px;
+    
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #ff00de, 0 0 80px #ff00de, 0 0 90px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #ff00de, 0 0 80px #ff00de, 0 0 90px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    /*background-image: linear-gradient(to right, #ff00de, #ff00de 25%, #ffffff 25%, #ffffff 50%, #ff00de 50%, #ff00de 75%, #ffffff 75%, #ffffff);*/
+    background-size: 10px 10px;
+    
+} 
+
+
+ 
+
+
+.text:hover{
+    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px var(--second-color) , 0 0 70px var(--second-color) , 0 0 80px var(--second-color) , 0 0 100px var(--second-color) ;
+}
+
+
+
+/* X-Small devices (portrait phones, less than 576px)
+No media query for xs since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .card {
+        width: 18rem;
+        margin-right: 1rem;
+      }
+    
+      .card:last-child {
+        margin-right: 0;
+      }
+      #reparacion-solucion {
+        margin-top: 0px;
+        padding-top: 0px;
+      }
+      
+      #mantenimiento-computo {
+          margin-top: 0px;
+          padding-top: 0px;
+      
+      }
+      
+      #impresion-digitalizacion {          
+          margin-top: 0px;
+          padding-top: 0px;      
+      }
+      
+      #software{
+          margin-top: 0px;
+          padding-top:0px;
+      
+      }
+      .imagen-fondo {
+        background-image: url(../img2/pcEnfermoHD.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        /* background-size:cover; */
+        background-size: 100% 100%;
+        /* height:50em; */
+        height: 90vw;    
+        max-width: 100%;
+    }
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /* Ayuda para redireccionamiento */
+
+#reparacion-solucion {
+    margin-top: -44px;
+    padding-top: 105px;
+  }
+  
+  #mantenimiento-computo {
+      margin-top: -50px;
+      padding-top: 130px;
+  
+  }
+  
+  #impresion-digitalizacion {
+      margin-top: -50px;
+      padding-top: 130px;
+  
+  }
+  
+  #software{
+      margin-top: -50px;
+      padding-top: 130px;
+  
+  }
+  /* .imagen-fondo {
+    height: 25em;
+    background-size: cover;
+    background-position: center;
+} */
+    
+.imagen-fondo {
+    background-image: url(../img2/pcEnfermoHD.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-size:cover; */
+    background-size: 100% 100%;
+    /* height:50em; */
+    height: 70vw;    
+    max-width: 100%;
+}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .nav-item:hover{
+        background-color:transparent;
+    }
+    /* .imagen-fondo {
+        height: 40em;
+        background-size: cover;
+        background-position: center;
+    } */
+
+    .imagen-fondo {
+        background-image: url(../img2/pcEnfermoHD.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        /* background-size:cover; */
+        background-size: 100% 100%;
+        /* height:50em; */
+        height: 60vw;    
+        max-width: 100%;
+    }
+
+ }
+
+/* X-Large devices (large desktops, 1200px and up)*/ 
+@media (min-width: 1200px) {
+    /* .imagen-fondo {
+        height: 50em;
+        max-width: 100%;
+        background-size: cover;
+        background-position: center;
+    } */
+
+    .imagen-fondo {
+        background-image: url(../img2/pcEnfermoHD.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        /* background-size:cover; */
+        background-size: 100% 100%;
+        /* height:50em; */
+        height: 50vw;    
+        max-width: 100%;
+    }
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+}
